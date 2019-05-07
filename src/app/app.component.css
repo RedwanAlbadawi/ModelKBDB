@@ -1,0 +1,5 @@
+.image{
+  height:59em; background-size:cover; width:100%;
+  background-image:url('../assets/architecture.jpg');
+  background-position:50% 50%;
+}

@@ -1,0 +1,18 @@
+.navbar {
+  background-color:#007bff;
+  display: inline-block;
+  text-align: center;
+  width:100%;
+}
+
+.navbar-text {
+  color: white;
+}
+
+h1 {
+  font-size:72pt;
+}
+
+.navbar-right {
+  position: absolute;
+}
