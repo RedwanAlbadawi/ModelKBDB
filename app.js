@@ -21,6 +21,8 @@ app.use(function(req, res, next) {
   next();
 });
 
+app.use(express.static(path.join(__dirname, 'public')));
+
 const mongoURI = 'mongodb+srv://modelkb:modelkb@modelkb-0dva5.gcp.mongodb.net/uploads?retryWrites=true';
 
 const conn = mongoose.createConnection(mongoURI);
