@@ -54,9 +54,9 @@ const storage = new GridFsStorage({
 });
 const upload = multer({ storage });
 
-app.post('/api/upload', upload.single('file'),(req, res)=> {
+app.post('/api/upload', upload.array("uploads[]", 12),(req, res)=> {
   //console.log(req.name.substr(0, req.name.indexOf('-')));
-  res.json({file: req.file});
+  res.json({array: req.array});
 });
 
 app.get('/api/collection/:bucketName', (req, res) => {

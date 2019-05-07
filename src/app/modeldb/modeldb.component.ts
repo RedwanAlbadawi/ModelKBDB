@@ -8,9 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ModeldbComponent implements OnInit {
 
-  selectedFile: File = null;
-  bucketname: string;
-  filename: string;
+  filesToUpload: Array<File> = [];
 
   constructor(private http: HttpClient) {
   }
@@ -18,14 +16,18 @@ export class ModeldbComponent implements OnInit {
   ngOnInit() {
   }
 
-  onFileSelected(event) {
-    this.selectedFile = event.target.files[0];
+  onFileSelected(fileInput: any) {
+    this.filesToUpload = <Array<File>> fileInput.target.files;
   }
 
   onUpload() {
-    console.log(this.selectedFile);
     const fd = new FormData()
-    fd.append('file', this.selectedFile, this.selectedFile.name);
+    const files: Array<File> = this.filesToUpload;
+    console.log(files);
+
+    for(let i =0; i < files.length; i++){
+      fd.append('uploads[]', files[i], files[i]['name']);
+    }
     this.http.post('/api/upload', fd)
       .subscribe(res => {
         console.log(res);
