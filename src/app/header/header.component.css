@@ -14,5 +14,9 @@ h1 {
 }
 
 .navbar-right {
-  position: absolute;
+  float: right;
+}
+
+navbar-left {
+  float: left;
 }
