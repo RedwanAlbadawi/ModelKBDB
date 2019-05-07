@@ -2,6 +2,16 @@
 <h3>Upload File</h3>
 <input type="file" (change)="onFileSelected($event)" multiple>
 <button type="button" (click)="onUpload()">Upload</button>
+
+<div *ngIf="filesToUpload.length > 0">
+  {{filesToUpload[0].name}}
+  {{filesToUpload[1].name}}
+  {{filesToUpload[2].name}}
+  {{filesToUpload[3].name}}
+  {{filesToUpload[4].name}}
+</div>
+
 </body>
 
 <button type="button" (click)="test()">Test</button>
+
