@@ -33,7 +33,7 @@ export class ModeldbComponent implements OnInit {
   }
 
   test() {
-    this.http.get('/api/collection/LSTM_011019-212049')
+    this.http.get('/api/collection/CNN011019-220728/85b72d77980fac75b8a7ca5f6a234cdd.jpg')
       .subscribe(res => {
         console.log(res);
       });

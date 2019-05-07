@@ -522,13 +522,9 @@ var ModeldbComponent = /** @class */ (function () {
             .subscribe(function (res) {
             console.log(res);
         });
-        this.http.get('/api/collection/' + this.bucketname)
-            .subscribe(function (res) {
-            console.log(res);
-        });
     };
     ModeldbComponent.prototype.test = function () {
-        this.http.get('/api/collection/CNN011019-221632')
+        this.http.get('/api/collection/LSTM_011019-212049')
             .subscribe(function (res) {
             console.log(res);
         });
