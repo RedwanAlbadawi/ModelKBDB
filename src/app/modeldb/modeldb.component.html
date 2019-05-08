@@ -1,17 +1,15 @@
-<body>
+<div class="input-form">
 <h3>Upload File</h3>
-<input type="file" (change)="onFileSelected($event)" multiple>
-<button type="button" (click)="onUpload()">Upload</button>
+<input class="mat-raised-button" type="file" (change)="onFileSelected($event)" multiple/>
+<button class="btn-primary" type="button" (click)="onUpload()">Upload</button>
 
-<div *ngIf="filesToUpload.length > 0">
-  {{filesToUpload[0].name}}
-  {{filesToUpload[1].name}}
-  {{filesToUpload[2].name}}
-  {{filesToUpload[3].name}}
-  {{filesToUpload[4].name}}
+<div class="row" *ngIf="filesToUpload?.length > 0">
+  <div class="table">
+    <ul class="files" *ngFor="let file of filesToUpload">
+      <li><a>{{file.name}}</a></li>
+    </ul>
+  </div>
+</div>
 </div>
 
-</body>
-
-<button type="button" (click)="test()">Test</button>
-
+<button class="btn-primary" type="button" (click)="test()">Test</button>

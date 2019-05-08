@@ -345,7 +345,7 @@ var AuthService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".navbar {\r\n  background-color:#007bff;\r\n  display: inline-block;\r\n  text-align: center;\r\n  width:100%;\r\n}\r\n\r\n.navbar-text {\r\n  color: white;\r\n}\r\n\r\nh1 {\r\n  font-size:72pt;\r\n}\r\n\r\n.navbar-right {\r\n  float: right;\r\n}\r\n\r\nimg {\r\n  float: left;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usd0JBQXdCO0VBQ3hCLHFCQUFxQjtFQUNyQixrQkFBa0I7RUFDbEIsVUFBVTtBQUNaOztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLFlBQVk7QUFDZDs7QUFFQTtFQUNFLFdBQVc7QUFDYiIsImZpbGUiOiJzcmMvYXBwL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5uYXZiYXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IzAwN2JmZjtcclxuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIHdpZHRoOjEwMCU7XHJcbn1cclxuXHJcbi5uYXZiYXItdGV4dCB7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG59XHJcblxyXG5oMSB7XHJcbiAgZm9udC1zaXplOjcycHQ7XHJcbn1cclxuXHJcbi5uYXZiYXItcmlnaHQge1xyXG4gIGZsb2F0OiByaWdodDtcclxufVxyXG5cclxuaW1nIHtcclxuICBmbG9hdDogbGVmdDtcclxufVxyXG4iXX0= */"
+module.exports = ".navbar {\r\n  background-color:darkgray;\r\n  display: inline-block;\r\n  text-align: center;\r\n  width:100%;\r\n  height: 100px;\r\n}\r\n\r\n.navbar-text {\r\n  color: white;\r\n}\r\n\r\nh1 {\r\n  font-size:50pt;\r\n  float: top;\r\n}\r\n\r\n.navbar-right {\r\n  float: right;\r\n}\r\n\r\nimg {\r\n  float: left;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UseUJBQXlCO0VBQ3pCLHFCQUFxQjtFQUNyQixrQkFBa0I7RUFDbEIsVUFBVTtFQUNWLGFBQWE7QUFDZjs7QUFFQTtFQUNFLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGNBQWM7RUFDZCxVQUFVO0FBQ1o7O0FBRUE7RUFDRSxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxXQUFXO0FBQ2IiLCJmaWxlIjoic3JjL2FwcC9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubmF2YmFyIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOmRhcmtncmF5O1xyXG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgd2lkdGg6MTAwJTtcclxuICBoZWlnaHQ6IDEwMHB4O1xyXG59XHJcblxyXG4ubmF2YmFyLXRleHQge1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxufVxyXG5cclxuaDEge1xyXG4gIGZvbnQtc2l6ZTo1MHB0O1xyXG4gIGZsb2F0OiB0b3A7XHJcbn1cclxuXHJcbi5uYXZiYXItcmlnaHQge1xyXG4gIGZsb2F0OiByaWdodDtcclxufVxyXG5cclxuaW1nIHtcclxuICBmbG9hdDogbGVmdDtcclxufVxyXG4iXX0= */"
 
 /***/ }),
 
@@ -356,7 +356,7 @@ module.exports = ".navbar {\r\n  background-color:#007bff;\r\n  display: inline-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar\">\r\n  <a class=\"navbar-left\" href=\"#\">\r\n    <img src=\"../../assets/kb_logo.png\" width=\"150\" height=\"150\" class=\"d-inline-block align-top\" alt=\"\">\r\n    <a class=\"navbar-text\" href=\"#\">\r\n      <h1>ModelKB DB</h1>\r\n    </a>\r\n    <a class=\"navbar-right\" href=\"#\" *ngIf=\"(authService.user$ | async)?.uid\">\r\n      <button class=\"btn btn-light\" (click)=\"authService.logout()\">Logout</button>\r\n    </a>\r\n  </a>\r\n</nav>\r\n"
+module.exports = "<nav class=\"navbar\">\r\n  <a class=\"navbar-left\" href=\"#\">\r\n    <img src=\"../../assets/kb_logo.png\" width=\"75\" height=\"75\" class=\"d-inline-block align-top\" alt=\"\">\r\n    <a class=\"navbar-text\" href=\"#\">\r\n      <h1>ModelKB DB</h1>\r\n    </a>\r\n    <a class=\"navbar-right\" href=\"#\" *ngIf=\"(authService.user$ | async)?.uid\">\r\n      <button class=\"btn btn-light\" (click)=\"authService.logout()\">Logout</button>\r\n    </a>\r\n  </a>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -473,7 +473,7 @@ var LoginComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "body {\r\n  text-align: center;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbW9kZWxkYi9tb2RlbGRiLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBa0I7QUFDcEIiLCJmaWxlIjoic3JjL2FwcC9tb2RlbGRiL21vZGVsZGIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG4iXX0= */"
+module.exports = "h3 {\r\n  padding: 10px;\r\n  text-align: center;\r\n}\r\n\r\n.input-form {\r\n  text-align: center;\r\n}\r\n\r\n.table {\r\n  margin: 0 auto;\r\n  display: table;\r\n}\r\n\r\nli {\r\n  display: inline-block;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbW9kZWxkYi9tb2RlbGRiLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFhO0VBQ2Isa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsY0FBYztFQUNkLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxxQkFBcUI7QUFDdkIiLCJmaWxlIjoic3JjL2FwcC9tb2RlbGRiL21vZGVsZGIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImgzIHtcclxuICBwYWRkaW5nOiAxMHB4O1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuLmlucHV0LWZvcm0ge1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuLnRhYmxlIHtcclxuICBtYXJnaW46IDAgYXV0bztcclxuICBkaXNwbGF5OiB0YWJsZTtcclxufVxyXG5cclxubGkge1xyXG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxufVxyXG4iXX0= */"
 
 /***/ }),
 
@@ -484,7 +484,7 @@ module.exports = "body {\r\n  text-align: center;\r\n}\r\n\r\n/*# sourceMappingU
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<body>\r\n<h3>Upload File</h3>\r\n<input type=\"file\" (change)=\"onFileSelected($event)\" multiple>\r\n<button type=\"button\" (click)=\"onUpload()\">Upload</button>\r\n</body>\r\n\r\n<button type=\"button\" (click)=\"test()\">Test</button>\r\n"
+module.exports = "<div class=\"input-form\">\r\n<h3>Upload File</h3>\r\n<input class=\"mat-raised-button\" type=\"file\" (change)=\"onFileSelected($event)\" multiple/>\r\n<button class=\"btn-primary\" type=\"button\" (click)=\"onUpload()\">Upload</button>\r\n\r\n<div class=\"row\" *ngIf=\"filesToUpload?.length > 0\">\r\n  <div class=\"table\">\r\n    <ul class=\"files\" *ngFor=\"let file of filesToUpload\">\r\n      <li><a>{{file.name}}</a></li>\r\n    </ul>\r\n  </div>\r\n</div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -519,12 +519,13 @@ var ModeldbComponent = /** @class */ (function () {
         var files = this.filesToUpload;
         console.log(files);
         for (var i = 0; i < files.length; i++) {
-            fd.append('uploads[]', files[i], files[i]['name']);
+            fd.append('uploads[]', files[i], files[i].name);
         }
         this.http.post('/api/upload', fd)
             .subscribe(function (res) {
             console.log(res);
         });
+        this.filesToUpload = [];
     };
     ModeldbComponent.prototype.test = function () {
         this.http.get('/api/collection/CNN011019-220728/85b72d77980fac75b8a7ca5f6a234cdd.jpg')

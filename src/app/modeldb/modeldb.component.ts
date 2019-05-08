@@ -17,16 +17,16 @@ export class ModeldbComponent implements OnInit {
   }
 
   onFileSelected(fileInput: any) {
-    this.filesToUpload = <Array<File>> fileInput.target.files;
+    this.filesToUpload = fileInput.target.files as Array<File>;
   }
 
   onUpload() {
-    const fd = new FormData()
+    const fd = new FormData();
     const files: Array<File> = this.filesToUpload;
     console.log(files);
 
-    for(let i =0; i < files.length; i++){
-      fd.append('uploads[]', files[i], files[i]['name']);
+    for (let i = 0; i < files.length; i++) {
+      fd.append('uploads[]', files[i], files[i].name);
     }
     this.http.post('/api/upload', fd)
       .subscribe(res => {
@@ -35,7 +35,7 @@ export class ModeldbComponent implements OnInit {
   }
 
   test() {
-    this.http.get('/api/collection/CNN011019-220728/85b72d77980fac75b8a7ca5f6a234cdd.jpg')
+    this.http.get('/api/collection/CNN011019-222647')
       .subscribe(res => {
         console.log(res);
       });
