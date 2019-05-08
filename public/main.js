@@ -356,7 +356,7 @@ module.exports = ".navbar {\r\n  background-color:darkgray;\r\n  display: inline
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar\">\r\n  <a class=\"navbar-left\" href=\"#\">\r\n    <img src=\"../../assets/kb_logo.png\" width=\"75\" height=\"75\" class=\"d-inline-block align-top\" alt=\"\">\r\n    <a class=\"navbar-text\" href=\"#\">\r\n      <h1>ModelKB DB</h1>\r\n    </a>\r\n    <a class=\"navbar-right\" href=\"#\" *ngIf=\"(authService.user$ | async)?.uid\">\r\n      <button class=\"btn btn-light\" (click)=\"authService.logout()\">Logout</button>\r\n    </a>\r\n  </a>\r\n</nav>\r\n"
+module.exports = "<nav class=\"navbar\">\r\n  <a class=\"navbar-left\" href=\"#\">\r\n    <img src=\"../../assets/kb_logo.png\" width=\"75\" height=\"75\" class=\"d-inline-block align-top\" alt=\"\">\r\n    <a class=\"navbar-text\" href=\"#\">\r\n      <h1>ModelKB DB</h1>\r\n    </a>\r\n    <a class=\"navbar-right\" href=\"#\" *ngIf=\"(authService.user$ | async)?.uid\">\r\n      <button class=\"btn btn-light\" (click)=\"authService.logout()\">Logout</button>\r\n    </a>\r\n  </a>\r\n</nav>\r\n\r\n"
 
 /***/ }),
 
@@ -484,7 +484,7 @@ module.exports = "h3 {\r\n  padding: 10px;\r\n  text-align: center;\r\n}\r\n\r\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"input-form\">\r\n<h3>Upload File</h3>\r\n<input class=\"mat-raised-button\" type=\"file\" (change)=\"onFileSelected($event)\" multiple/>\r\n<button class=\"btn-primary\" type=\"button\" (click)=\"onUpload()\">Upload</button>\r\n\r\n<div class=\"row\" *ngIf=\"filesToUpload?.length > 0\">\r\n  <div class=\"table\">\r\n    <ul class=\"files\" *ngFor=\"let file of filesToUpload\">\r\n      <li><a>{{file.name}}</a></li>\r\n    </ul>\r\n  </div>\r\n</div>\r\n</div>\r\n"
+module.exports = "<div class=\"input-form\">\r\n<h3>Upload File</h3>\r\n<input class=\"mat-raised-button\" type=\"file\" (change)=\"onFileSelected($event)\" multiple/>\r\n<button class=\"btn-primary\" type=\"button\" (click)=\"onUpload()\">Upload</button>\r\n\r\n<div class=\"row\" *ngIf=\"filesToUpload?.length > 0\">\r\n  <div class=\"table\">\r\n    <ul class=\"files\" *ngFor=\"let file of filesToUpload\">\r\n      <li><a>{{file.name}}</a></li>\r\n    </ul>\r\n  </div>\r\n</div>\r\n</div>\r\n\r\n<button class=\"btn-primary\" type=\"button\" (click)=\"test()\">Test</button>\r\n\r\n<img alt=\"\" id=\"1\" src=\"/api/file/CNN011019-222647/CNN011019-222647_model.h5\">\r\n"
 
 /***/ }),
 
@@ -525,10 +525,9 @@ var ModeldbComponent = /** @class */ (function () {
             .subscribe(function (res) {
             console.log(res);
         });
-        this.filesToUpload = [];
     };
     ModeldbComponent.prototype.test = function () {
-        this.http.get('/api/collection/CNN011019-220728/85b72d77980fac75b8a7ca5f6a234cdd.jpg')
+        this.http.get('http://localhost:5000/api/file/CNN011019-222647/CNN011019-222647_accuracy.jpg')
             .subscribe(function (res) {
             console.log(res);
         });

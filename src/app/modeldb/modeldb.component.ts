@@ -9,7 +9,6 @@ import { HttpClient } from '@angular/common/http';
 export class ModeldbComponent implements OnInit {
 
   filesToUpload: Array<File> = [];
-
   constructor(private http: HttpClient) {
   }
 
@@ -35,7 +34,7 @@ export class ModeldbComponent implements OnInit {
   }
 
   test() {
-    this.http.get('/api/collection/CNN011019-222647')
+    this.http.get('http://localhost:5000/api/file/CNN011019-222647/CNN011019-222647_accuracy.jpg')
       .subscribe(res => {
         console.log(res);
       });

@@ -87,7 +87,7 @@ app.get('/api/collection/:bucketName/:filename', (req, res) => {
   });
 });
 
-app.get('/api/image/:bucketName/:filename', (req, res) => {
+app.get('/api/file/:bucketName/:filename', (req, res) => {
   gfs.collection(req.params.bucketName);
   gfs.files.findOne({filename: req.params.filename}, (err, file) => {
     if(!file || file.length === 0) {
@@ -95,12 +95,14 @@ app.get('/api/image/:bucketName/:filename', (req, res) => {
         err: 'No file exist'
       });
     }
-    if(file.contentType === 'image/jpeg' || file.contentType === 'img/png') {
+    if(file.contentType === 'image/jpeg' || file.contentType === 'img/png' || file.contentType === "text/plain" || file.contentType === "application/octet-stream") {
       const readstream = gfs.createReadStream(file.filename);
+      res.set('Content-Type', 'image/jpeg');
+      console.log(readstream.pipe(res));
       readstream.pipe(res);
     } else {
       res.status(404).json({
-        err: 'Not an image'
+        err: 'Not an image or plain text file'
       });
     }
   });
